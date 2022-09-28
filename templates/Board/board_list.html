@@ -1,0 +1,257 @@
+﻿{% extends "board_base.html" %}
+{% block content %}
+{% load static %}
+<!-- Board 영역 -->
+<div class="container">
+  <table class="table table-striped" >
+    <!-- Table Head 영역 -->
+    <thead class="thead-dark">
+      <tr class="text-center">
+        <th>번호</th>
+        <th style="width:50%">제목</th>
+        <th>글쓴이</th>
+        <th>작성일</th>
+      </tr>
+    </thead>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators ">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active " aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" style=" background-color: rgb(0, 0, 0)">
+          <img src={% static "Board\images\frostpunk_1.jpg" %} class="rounded mx-auto d-block w-75" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Action Event</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item" style=" background-color: rgb(0, 0, 0)">
+          <img src={% static "Board\images\frostpunk_2.jpg" %} class="rounded mx-auto d-block w-75" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Cooperation Event</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item" style=" background-color: rgb(0, 0, 0)">
+          <img src={% static "Board\images\frostpunk_3.jpg" %} class="rounded mx-auto d-block w-75" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Traveling Event</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      
+      </button>
+    </div>
+
+    <main>
+      <div class="container-fluid d-flex justify-content-center p-4" style=" background-color: rgb(0, 0, 0)">
+        <a class="navbar-brand text-success fs-3 fw-bold "  href="#"> 
+          추천영상
+        </a>
+      </div>
+      <div class="album" style=" background-color: rgb(0, 0, 0)">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src={% static "Board\images\user1.jpg" %} class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">~~ 공략</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group ">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">good : 48</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">views : 872</button>
+                    </div>
+                    <small class="text-muted">1 days</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src={% static "Board\images\user2.jpg" %} class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">~~ 공략</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">good : 182</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">views : 1523</button>
+                    </div>
+                    <small class="text-muted">7 days </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src={% static "Board\images\user3.jpg" %} class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">~~ 공략</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">good : 78</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">views : 972</button>
+                    </div>
+                    <small class="text-muted">3 days</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src={% static "Board\images\user4.jpg" %} class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">~~ 공략</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">good : 78</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">views : 972</button>
+                    </div>
+                    <small class="text-muted">3 days</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src={% static "Board\images\user5.jpg" %} class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">~~ 공략</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">good : 78</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">views : 972</button>
+                    </div>
+                    <small class="text-muted">3 days</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src={% static "Board\images\user6.jpg" %} class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">~~ 공략</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">good : 78</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">views : 972</button>
+                    </div>
+                    <small class="text-muted">3 days</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+   
+    </main>
+
+    <!-- Table Body 영역 -->
+    <tbody>
+      <div class="container-fluid d-flex justify-content-center p-4" style=" background-color: rgb(0, 0, 0)">
+        <a class="navbar-brand text-success fs-3 fw-bold "   href="#"> 
+          Community
+        </a>
+      </div>
+      {% for board in object_list %}
+    <div>
+      <tr class="text-center" style=" background-color: rgb(255, 255, 255)">
+        <td>{{ board.id }}</td>
+        {% if user.is_authenticated %}
+          <td><a class="text-reset text-decoration-none" href="{{ board.get_absolute_url }}">
+          {{ board.title }}</a></td>
+        {% else %}
+          <td><a class="login_check text-reset text-decoration-none">
+          {{ board.title }}</a></td>
+        {% endif %}
+        <td>{{ board.author }}</td>
+        {% if object.modify_date %}
+        <td>{{ board.modify_date }}</td>
+        {% else %}
+        <td>{{ board.create_date }}</td>
+        {% endif %}
+      </tr>
+      {% endfor %}
+    </div>
+
+      
+    </tbody>
+    
+    </table><br>
+
+  {% if page_obj.paginator.count >= page_obj.paginator.per_page %}
+  <!-- pagination 영역 -->
+  <ul class="pagination justify-content-center">
+    {% if page_obj.has_previous %}
+    <li class="page-item">
+      <a class="page-link" href="?page={{ page_obj.previous_page_number }}">이전</a>
+    </li>
+    {% else %}
+    <li class="page-item disalbed"><a class="page-link" href="#">이전</a></li>
+    {% endif %}
+    
+    {% for page_number in page_obj.paginator.page_range %}
+    {% if page_number >= page_obj.number|add:-3 and page_number <= page_obj.number|add:3 %}
+      {% if page_number == page_obj.number %}
+        <li class="page-item active">
+          <a class="page-link" href="?page={{ page_number }}">{{ page_number }}</a>
+        </li>
+      {% else %}
+        <li class="page-item">
+          <a class="page-link" href="?page={{ page_number }}">{{ page_number }}</a>
+        </li>
+      {% endif %}
+    {% endif %}
+    {% endfor %}
+
+    {% if page_obj.has_next %}
+    <li class="page-item">
+      <a class="page-link" href="?page={{ page_obj.next_page_number }}">다음</a>
+    </li>
+    {% else %}
+    <li class="page-item disalbed"><a class="page-link" href="#">다음</a></li>
+    {% endif %}
+  </ul>
+  {% endif %}
+
+</div>
+{% endblock %}
+
+{% block script %}
+<script type='text/javascript'>
+  $(document).ready(function() {
+    $(".login_check").on('click', function() {
+      alert("로그인 후 이용이 가능합니다.")
+    });
+  });
+</script>
+<div>
+  <body>
+    <footer class="text-success p-5 fs-5"  style=" background-color: rgb(0, 0, 0)">
+      <div class="container p-5">
+        <p class="float-end mb-1 ">
+          <a href="#">Back to top</a>
+        </p>
+        <p class="mb-1 ">&copy; KG Game</p>
+        <div class="btn-group w-25" role="group" aria-label="Basic outlined example">
+          <a href="#" class="btn btn-outline-success my-2">회사 소개</a>
+          <a href="#" class="btn btn-outline-success my-2">인재 채용</a>
+          <a href="#" class="btn btn-outline-success my-2">고객 지원</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</div>
+{% endblock %}
