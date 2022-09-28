@@ -1,0 +1,12 @@
+asgiref==3.2.10
+distlib==0.3.5
+Django==3.1
+filelock==3.4.1
+importlib-metadata==4.8.3
+importlib-resources==5.4.0
+platformdirs==2.4.0
+pytz==2022.2.1
+sqlparse==0.4.3
+typing_extensions==4.1.1
+virtualenv==20.16.3
+zipp==3.6.0
